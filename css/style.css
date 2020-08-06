@@ -1,0 +1,294 @@
+/* RESETTING CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #ebebeb;
+}
+/* *------------------Custom Fonts--------------------*  */
+@font-face {
+  font-family: ProximaNova;
+  src: url(../fonts/Proxima-Nova-Alt-Bold.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* * Styling of the Page begins from here * */
+
+#header {
+  background-image: url(../imgs/girl.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.title {
+  font-family: ProximaNova;
+  font-size: 3.5rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.container-fluid {
+  height: 100%;
+}
+.subtitle {
+  margin-top: 3rem;
+  font-family: Poppins;
+  font-size: 2rem;
+  width: 80%;
+}
+
+.heading-box {
+  width: 60%;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.heading-box-center {
+  display: flex;
+
+  align-items: center;
+  height: 100%;
+}
+/* ----------------------*Header Section Ends Here --------------------------- */
+
+.image-row {
+  margin-top: -100px;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  background-color: transparent;
+}
+
+.text-blue {
+  color: #12ccb9;
+}
+.classes-section {
+  text-align: center;
+}
+
+.classes-section .subtitle {
+  width: 100%;
+}
+
+/* 2nd row  */
+.cat-title {
+  font-size: 2rem;
+  color: #12ccb9;
+}
+.cat-subtitle {
+  font-size: 1.5rem;
+  color: #12ccb9;
+}
+
+/* ---------------------3rd section ------------------------------- */
+#third-sec {
+  background-image: url(../imgs/girl2.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section3-title {
+  font-size: 4rem;
+  font-family: ProximaNova;
+}
+
+.section3-subtitle {
+  font-size: 2.5rem;
+  font-family: Poppins;
+  width: 50%;
+}
+.section3-heading-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* Section 4  */
+
+#section4 {
+  height: 100vh;
+  background-image: url(../imgs/pink-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section4-title {
+  color: white;
+  font-size: 4rem;
+  font-family: ProximaNova;
+}
+
+/* Image cards */
+
+.img-card {
+  width: 30rem;
+
+  height: 50rem;
+}
+.img-card img {
+  border-radius: 3rem;
+}
+
+/* --------------------------- Section 5 ---------------------------- */
+
+#section5 {
+  height: 100vh;
+  background-color: #ffffff;
+}
+.testimonial-title {
+  font-size: 3.5rem;
+  font-family: ProximaNova;
+}
+.testimonial-subtitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: Poppins;
+}
+
+.img-avatar {
+  width: 15rem;
+  height: 15rem;
+}
+
+.img-avatar img {
+  border-radius: 50%;
+}
+
+/* Section 5 */
+
+#section6 {
+  background-image: url(../imgs/buildings.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us-card {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.808),
+    rgba(255, 255, 255, 0.808)
+  );
+  border-radius: 2rem;
+  width: 50rem;
+  height: 30rem;
+}
+
+.contact-us-card .contact-title {
+  font-size: 3.5rem;
+  font-family: ProximaNova;
+}
+
+.address,
+.phone {
+  font-family: Poppins;
+  font-size: 1.5rem;
+}
+
+.img-card {
+  position: relative;
+}
+.img-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: inline-block;
+  font-family: ProximaNova;
+  font-size: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* media queries */
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .image-row {
+    margin-top: 5rem;
+  }
+  #section4 {
+    height: auto;
+  }
+  .center-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .img-card {
+    height: 28rem;
+    margin-bottom: 5rem;
+  }
+  .section4-title {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section3-subtitle {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .wrapper {
+    margin: 0 2rem;
+  }
+}
+@media screen and (max-width: 532px) {
+  #section6 {
+    padding: 1rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .heading-box {
+    width: 100%;
+  }
+}
